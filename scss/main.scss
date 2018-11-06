@@ -1,0 +1,61 @@
+@import '_about.scss';
+@import '_contact-form.scss';
+@import '_contact';
+@import '_footer';
+@import '_header';
+@import '_portfolio';
+@import '_portfolio_pop_out';
+@import '_sideMenu';
+@import '_skills';
+
+.no-transition * {
+	transition: none !important;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+button {
+	background-color: inherit;
+	color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: inherit;
+	font-family: inherit;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.hide {
+	display: none;
+}
+
+#grey-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 5;
+	display: none;
+}
+.hide {
+	display: none !important;
+}
+#grey-bg.show {
+	display: block;
+}

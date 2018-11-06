@@ -1,185 +1,318 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Steve Cahn</title>
+    <meta property="og:title" content="Steve Cahn">
+    <meta name="author" content="Steve Cahn">
+    <meta name="description" content="Web Designer  &amp; Front-end Developer">
+    <meta property="og:description" content="Web Designer  &amp; Front-end Developer">
+
+    <meta name=”keywords” content=”Web,Designer,Front-end,Developer” />
+    <meta property="og:locale" content="en_US">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#b9f594">
+    <meta name="apple-mobile-web-app-title" content="Steve Cahn">
+    <meta name="application-name" content="Steve Cahn">
+    <meta name="msapplication-TileColor" content="#b9f594">
+    <meta name="theme-color" content="#b9f594">
+
+
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
 </head>
 
-<body>
 
-    <nav>
-        <div class="" id="hamberger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<body class="no-transition">
 
-        <div id="pop-out-menu">
-            <div id="pop-out-menu-bg">
-                <ul>
-                    <li>
-                        <button type="button" class="home-btn-scroll">Home</button>
-                    </li>
-                    <li>
-                        <button type="button" class="about-btn-scroll">About</button>
-                    </li>
-                    <li>
-                        <button type="button" class="skills-btn-scroll">Skills</button>
-                    </li>
-                    <li>
-                        <button type="button" class="contact-btn-scroll">Contact</buttons>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <header>
 
-        <div id="top-menu">
+        <nav>
             <ul>
-                <li>
-                    <button type="button" class="home-btn-scroll">Home</button>
-                </li>
-                <li>
-                    <button type="button" class="about-btn-scroll">About</button>
-                </li>
-                <li>
-                    <button type="button" class="skills-btn-scroll">Skills</button>
-                </li>
-                <li>
-                    <button type="button" class="contact-btn-scroll">Contact</buttons>
-                </li>
+                <li><button type="button" class="home-btn">Home</button></li>
+                <li><button type="button" class="about-btn">About</button></li>
+                <li><button type="button" class="skills-btn">Skills</button></li>
+                <li><button type="button" class="portfolio-btn">Portfolio</button></li>
+                <li><button type="button" class="contact-btn">Contact</button></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
 
 
-    <section id="heading">
-        <h1>Web Designer &amp; Front-end Developer</h1>
-        <h2>I design and code high quality responsive websites</h2>
-        <div id="say-hello-wrapper">
-            <img src="https://s8.postimg.cc/85enf3nx1/Buisiness_Man_-_Hello.png" width="250px">
-            <button type="button" class="contact-btn fancy-btn">Say Hello</buttons>
-        </div>
-    </section>
-
-
-    <section class="section-text" id="section-about">
-        <div class="section-text-wrapper">
-            <div class="section-title">About</div>
-            <div id="about-intro">Hi. My name is Simcha Cahn.</div>
-            <p>I started messing around with computer programming ever since I was 14 years old, and then fell in love with
-                web designing. I do plan on taking my skills to the next level and becoming a full stack developer, possibly
-                starting out with node.js. Being that I'm a quick learner it shouldn't be too difficult, but for now I'm
-                focusing on the front end aspect.</p>
-        </div>
-        <div class="section-side"></div>
-    </section>
-
-
-    <section class="section-text" id="section-skills">
-        <div class="section-side"></div>
-        <div class="section-text-wrapper">
-            <div class="section-title">Skills</div>
-            <p>I'm a self taught web designer, speaking the languages of HTML, CSS and JavaScript. I'm a quick learner, so picking
-                up a new language or framework isn't a problem. I create clean, modern, and fully responsive websites. As
-                a front end developer, I believe it's important to know programs which assist in creating the graphics. I
-                work with Photoshop, Illustrator, and InDesign.</p>
-        </div>
-    </section>
-
-
-    <section id="section-contact">
-        <div id="section-contact-wrapper">
-            <div id="section-contact-text">
-                <h1 id="contact-title">Contact</h1>
-                <h2 id="contact-intro">I'm always intrested in chatting. Want to get in touch?</h2>
+        <div id="header-bg">
+            <div id="header-left">
+                <div class="header-circles" id="circle-top-left">
+                    <div class="header-inner-circles"></div>
+                </div>
+                <div class="header-circles" id="circle-top-middle">
+                    <div class="header-inner-circles"></div>
+                </div>
+                <div class="header-squares" id="square-bottom-middle">
+                    <div class="header-inner-square"></div>
+                </div>
             </div>
-            <button type="button" class="contact-btn fancy-btn">Contact</buttons>
+            <div id="header-right">
+                <img class="header-trapezoid" id="header-trapezoid-bottom" src="https://s8.postimg.cc/tngn5pjv9/trapezoid-shape.png">
+                <img class="header-trapezoid" id="header-trapezoid-top" src="https://s8.postimg.cc/sg7aqsvut/trapezoid-shape-01.png">
+            </div>
+        </div>
+
+        <div id="header-content">
+            <div id="hc-bg-highlighter"></div>
+            <div id="hc-wrapper">
+                <div id="hc-left-content">
+                    <h1>Web Designer &amp; Front-end Developer</h1>
+                    <h2>I design and code high quality responsive websites</h2>
+                </div>
+                <div id="hc-right-content">
+                    <img src="https://s8.postimg.cc/gdpwq5thh/Responsive_Design_Blue.png" alt="Responsive Image" width="500">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <section id="about">
+        <div id="about-bg">
+            <div id="about-left"></div>
+            <div id="about-right"></div>
+            <div id="about-top-lines">
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+                <div class="about-line"></div>
+            </div>
+        </div>
+        <div id="about-content">
+            <div id="about-content-left">
+                <span>Hi.</span><span>I'm Steve Cahn</span><span>A Web Designer</span>
+            </div>
+            <div id="about-content-right">
+                <p>My name is Steve Cahn and I'm a web designer based in sunny Los Angeles, California. I fell in love
+                    with
+                    web designing ever since I was 14 years old. I work with HTML, CSS, and JavaScript. In addition to
+                    programming, I work with some adobe programs, such as PhotoShop, Illustrator, Indesign, and
+                    Premiere Pro. Web designing
+                    is where my passion lies.</p>
+            </div>
         </div>
     </section>
 
 
+
+
+    <section id="portfolio">
+        <div id="portfolio-pop-out-container"></div>
+
+
+        <div id="portfolio-bg-wrapper">
+            <div id="portfolio-bg-right" class="portfolio-bg"></div>
+            <div id="portfolio-bg-left" class="portfolio-bg"></div>
+        </div>
+
+        <div id="portfolio-wrapper">
+
+
+            <div id="portfolio-title-wrapper">
+                <h2 id="portfolio-title">My Recent Work</h2>
+                <h3 id="portfolio-subTitle">Here are a few recent design projects</h3>
+            </div>
+
+            <div id="portfolio-items"></div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="skills">
+        <div id="skills-wrapper">
+            <div class="skill">
+                <img src="https://s8.postimg.cc/5nl2jmln9/web-design-icon.png" height="75">
+                <h2 class="skills-heading">Front-end Developer</h2>
+                <div class="skills-description">I create clean, modern, responsive websites using HTML, CSS, and
+                    JavaScript.
+                    I tend to make things from scratch, unless it would mean to "re-create the wheel", in which case I
+                    would
+                    download the library and modify it accordingly.</div>
+            </div>
+            <div class="skill">
+                <img src="https://s8.postimg.cc/5es376y5x/design-icon.png" height="75">
+                <h2 class=" skills-heading ">Design</h2>
+                <div class="skills-description ">As a front-end developer, I believe it's important to know the graphic
+                    designing
+                    programs, PhotoShop, Illustrator, and Indesign, so that one can easily edit an icon or an image to
+                    fit
+                    the websites needs.</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="contact">
+        <div id="contact-wrapper">
+            <div id="contact-img">
+                <div id="contact-name">steve<span>cahn</span></div>
+                <div id="contact-name-title">Web Designer</div>
+            </div>
+            <div id="contact-context">
+                <div id="contact-heading">Want to Chat?</div>
+                <div id="contact-text">I'm always interested in chatting. Want to get in touch? You can contact me via
+                    email,
+                    or by clicking the contact button.</div>
+                <a href="mailto:steve@stevecahn.net?Subject=Hello" id="email-address">steve@stevecahn.net</a>
+            </div>
+            <button type="button" class="contact-btn">Contact</button>
+        </div>
+    </section>
 
     <footer>
-        <div id="footer-content">
-            <div id="footer-content-wrapper">
-                <div class="footer-side">
-                    <h2 class="footer-title">Simcha Cahn</h2>
-                    <div id="footer-contact-text">
-                        You can contact me via email:
-                        <a href="mailto:simchacahn@gmail.com.com?Subject=Hello" id="footer-email">SimchaCahn@gmail.com</a>.
-                        <br/>Or you can contact me using
-                        <button type="button" id="footer-contact-form-btn contact-btn">this</button> form.
-                    </div>
-                </div>
-                <div id="footer-menu">
-                    <h2 class="footer-title">Menu</h2>
-                    <ul>
-                        <li>
-                            <button type="button" class="home-btn-scroll">Home</button>
-                        </li>
-                        <li>
-                            <button type="button" class="about-btn-scroll">About</button>
-                        </li>
-                        <li>
-                            <button type="button" class="skills-btn-scroll">Skills</button>
-                        </li>
-                        <li>
-                            <button type="button" class="contact-btn-scroll">Contact</buttons>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="footer-copyright">Copyright &copy; 2018 by Simcha Cahn. All rights reserved.</div>
-        </div>
+        <div id="footer-copyright">Copyright &copy; 2018 by Steve Cahn. All rights reserved.</div>
+        <ul>
+            <li><button type="button" class="home-btn">Home</button></li>
+            <li><button type="button" class="about-btn">About</button></li>
+            <li><button type="button" class="skills-btn">Skills</button></li>
+            <li><button type="button" class="portfolio-btn">Portfolio</button></li>
+            <li><button type="button" class="contact-btn">Contact</button></li>
+        </ul>
     </footer>
 
 
 
 
 
-    <div id="contact-form" class="">
-        <div id="contact-form-heading">
-            <div id="contact-form-heading-wrapper">
-                <h2 id="contact-form-title">What can I do for you today?</h2>
-                <button type="button" id="close-contact-form">&#10006;</button>
-            </div>
-            <div id="contact-form-heading-line"></div>
+
+    <div id="side-menu">
+        <div id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <form action="">
-            <div class="contact-form-input-wrapper">
-                <input type="text" name="name" id="name" class="contact-form-text">
-                <label for="name">Full Name</label>
-                <span class="error-msg add-info-msg">Please enter your name</span>
-            </div>
-            <div class="contact-form-input-wrapper">
-                <input type="text" name="email" id="email" class="contact-form-text">
-                <label for="email">Email</label>
-                <span class="error-msg add-info-msg">Please provide an email address</span>
-                <span class="error-msg invalid-email-msg">Please enter a valid email address</span>
-            </div>
-            <div class="contact-form-input-wrapper">
-                <input type="text" name="subject" id="subject" class="contact-form-text">
-                <label for="subject">Subject</label>
-                <span class="error-msg add-info-msg">Please add a subject</span>
-            </div>
-            <div id="contact-form-textarea-wrapper">
-                <textarea name="message" id="message" class="contact-form-text"></textarea>
-                <label for="message" id="contact-form-textarea-lbl">How Can I help you?</label>
-                <span class="error-msg add-info-msg">Please add a message</span>
-            </div>
-            <input type="submit" value="Send" id="contact-form-submit" class="fancy-btn">
-        </form>
+        <div id="side-menu-wrapper">
+            <ul>
+                <li><button type="button" class="home-btn">Home</button></li>
+                <li><button type="button" class="about-btn">About</button></li>
+                <li><button type="button" class="skills-btn">Skills</button></li>
+                <li><button type="button" class="portfolio-btn">Portfolio</button></li>
+                <li><button type="button" class="contact-btn">Contact</button></li>
+            </ul>
+        </div>
     </div>
 
-    <div id="grey-out-page"></div>
 
 
 
-    <script src="main.js"></script>
+
+
+
+
+    <div id="contact-form-outer-wrapper">
+
+
+        <div id="contact-form" class="">
+            <div id="contact-form-wrapper">
+                <div id="contact-form-heading">
+                    <div id="contact-form-heading-wrapper">
+                        <h2 id="contact-form-title">What can I do for you today?</h2>
+                        <button type="button" id="close-contact-form">&#10006;</button>
+                    </div>
+                    <div id="contact-form-heading-line"></div>
+                </div>
+
+                <form class="gform" action="https://script.google.com/macros/s/AKfycbxsvKHS2qyzUWa_D_yW1XW443Ka_8wWu3KHjsABrgPhiUJwG08/exec"
+                    method="POST">
+                    <div class="contact-form-input-wrapper">
+                        <input type="text" name="fullName" id="fullName" class="contact-form-text">
+                        <label for="fullName">Full Name</label>
+                        <span class="error-msg add-info-msg">Please enter your name</span>
+                    </div>
+                    <div class="contact-form-input-wrapper">
+                        <input type="text" name="email" id="email" class="contact-form-text">
+                        <label for="email">Email</label>
+                        <span class="error-msg add-info-msg">Please provide an email address</span>
+                        <span class="error-msg invalid-email-msg">Please enter a valid email address</span>
+                    </div>
+                    <div class="contact-form-input-wrapper">
+                        <input type="text" name="subject" id="subject" class="contact-form-text">
+                        <label for="subject">Subject</label>
+                        <span class="error-msg add-info-msg">Please add a subject</span>
+                    </div>
+                    <div id="contact-form-textarea-wrapper">
+                        <textarea name="message" id="message" class="contact-form-text"></textarea>
+                        <label for="message" id="contact-form-textarea-lbl">How Can I help you?</label>
+                        <span class="error-msg add-info-msg">Please add a message</span>
+                    </div>
+                    <input id="honeypot" type="text" name="honeypot" value="" />
+                    <input type="submit" value="Send" id="contact-form-submit" class="fancy-btn">
+                </form>
+            </div>
+            <div id="submitted-wrapper">
+                <div id="submitted-loader"></div>
+                <div id="submitted-msg">Sending</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="grey-bg"></div>
+
+
+    <script data-cfasync="false" type="text/javascript" src="javascript/form-submission-handler.js"></script>
+    <script src="javascript/greyBG.js"></script>
+    <script src="javascript/sideMenu.js"></script>
+    <script src="javascript/contactHandler.js"></script>
+    <script src="javascript/scrollIntoViewHandler.js"></script>
+    <script src="javascript/portfolios.js"></script>
+    <script src="javascript/portfolioPopOut.js"></script>
+    <script src="javascript/portfolioInit.js"></script>
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>

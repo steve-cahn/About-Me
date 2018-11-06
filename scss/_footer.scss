@@ -1,0 +1,44 @@
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	margin: auto;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+#footer-copyright {
+	letter-spacing: 0.1rem;
+	text-align: center;
+}
+footer ul {
+	display: flex;
+}
+footer li {
+	color: rgba(0, 0, 0, 0.7);
+}
+footer li:hover {
+	color: black;
+}
+footer li:not(:first-child)::before {
+	content: '~';
+	padding: 1rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+	footer {
+		width: 90%;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+	footer {
+		flex-direction: column;
+	}
+	#footer-copyright {
+		order: 1;
+		margin-top: 1rem;
+	}
+	footer li:not(:first-child)::before {
+		padding: 0.5rem;
+	}
+}
