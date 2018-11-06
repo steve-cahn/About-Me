@@ -4,10 +4,13 @@
 	var aboutBtnScroll = document.querySelectorAll('.about-btn');
 	var skillsBtnScroll = document.querySelectorAll('.skills-btn');
 	var portfolioBtnScroll = document.querySelectorAll('.portfolio-btn');
+	var contactScroll = document.querySelectorAll('.contact-btn');
+
 	var topSection = document.getElementsByTagName('header')[0];
 	var sectionAbout = document.getElementById('about');
 	var sectionSkills = document.getElementById('skills');
 	var portfolioView = document.getElementById('portfolio');
+	var contactView = document.getElementById('contact');
 
 	(function init() {
 		// Add scrolling event for menu items
@@ -15,6 +18,7 @@
 		scrollOnCLickHandler(skillsBtnScroll, sectionSkills);
 		scrollOnCLickHandler(aboutBtnScroll, sectionAbout);
 		scrollOnCLickHandler(portfolioBtnScroll, portfolioView);
+		scrollOnCLickHandler(contactScroll, contactView);
 	})();
 
 	function scrollOnCLickHandler(elem, targetScroll) {
