@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="" id="hamberger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="pop-out-menu">
+            <div id="pop-out-menu-bg">
+                <ul>
+                    <li>
+                        <button type="button" class="home-btn-scroll">Home</button>
+                    </li>
+                    <li>
+                        <button type="button" class="about-btn-scroll">About</button>
+                    </li>
+                    <li>
+                        <button type="button" class="skills-btn-scroll">Skills</button>
+                    </li>
+                    <li>
+                        <button type="button" class="contact-btn-scroll">Contact</buttons>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="top-menu">
+            <ul>
+                <li>
+                    <button type="button" class="home-btn-scroll">Home</button>
+                </li>
+                <li>
+                    <button type="button" class="about-btn-scroll">About</button>
+                </li>
+                <li>
+                    <button type="button" class="skills-btn-scroll">Skills</button>
+                </li>
+                <li>
+                    <button type="button" class="contact-btn-scroll">Contact</buttons>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="heading">
+        <h1>Web Designer &amp; Front-end Developer</h1>
+        <h2>I design and code high quality responsive websites</h2>
+        <div id="say-hello-wrapper">
+            <img src="https://s8.postimg.cc/85enf3nx1/Buisiness_Man_-_Hello.png" width="250px">
+            <button type="button" class="contact-btn fancy-btn">Say Hello</buttons>
+        </div>
+    </section>
+
+
+    <section class="section-text" id="section-about">
+        <div class="section-text-wrapper">
+            <div class="section-title">About</div>
+            <div id="about-intro">Hi. My name is Simcha Cahn.</div>
+            <p>I started messing around with computer programming ever since I was 14 years old, and then fell in love with
+                web designing. I do plan on taking my skills to the next level and becoming a full stack developer, possibly
+                starting out with node.js. Being that I'm a quick learner it shouldn't be too difficult, but for now I'm
+                focusing on the front end aspect.</p>
+        </div>
+        <div class="section-side"></div>
+    </section>
+
+
+    <section class="section-text" id="section-skills">
+        <div class="section-side"></div>
+        <div class="section-text-wrapper">
+            <div class="section-title">Skills</div>
+            <p>I'm a self taught web designer, speaking the languages of HTML, CSS and JavaScript. I'm a quick learner, so picking
+                up a new language or framework isn't a problem. I create clean, modern, and fully responsive websites. As
+                a front end developer, I believe it's important to know programs which assist in creating the graphics. I
+                work with Photoshop, Illustrator, and InDesign.</p>
+        </div>
+    </section>
+
+
+    <section id="section-contact">
+        <div id="section-contact-wrapper">
+            <div id="section-contact-text">
+                <h1 id="contact-title">Contact</h1>
+                <h2 id="contact-intro">I'm always intrested in chatting. Want to get in touch?</h2>
+            </div>
+            <button type="button" class="contact-btn fancy-btn">Contact</buttons>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-content-wrapper">
+                <div class="footer-side">
+                    <h2 class="footer-title">Simcha Cahn</h2>
+                    <div id="footer-contact-text">
+                        You can contact me via email:
+                        <a href="mailto:simchacahn@gmail.com.com?Subject=Hello" id="footer-email">SimchaCahn@gmail.com</a>.
+                        <br/>Or you can contact me using
+                        <button type="button" id="footer-contact-form-btn contact-btn">this</button> form.
+                    </div>
+                </div>
+                <div id="footer-menu">
+                    <h2 class="footer-title">Menu</h2>
+                    <ul>
+                        <li>
+                            <button type="button" class="home-btn-scroll">Home</button>
+                        </li>
+                        <li>
+                            <button type="button" class="about-btn-scroll">About</button>
+                        </li>
+                        <li>
+                            <button type="button" class="skills-btn-scroll">Skills</button>
+                        </li>
+                        <li>
+                            <button type="button" class="contact-btn-scroll">Contact</buttons>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-copyright">Copyright &copy; 2018 by Simcha Cahn. All rights reserved.</div>
+        </div>
+    </footer>
+
+
+
+
+
+    <div id="contact-form" class="">
+        <div id="contact-form-heading">
+            <div id="contact-form-heading-wrapper">
+                <h2 id="contact-form-title">What can I do for you today?</h2>
+                <button type="button" id="close-contact-form">&#10006;</button>
+            </div>
+            <div id="contact-form-heading-line"></div>
+        </div>
+        <form action="">
+            <div class="contact-form-input-wrapper">
+                <input type="text" name="name" id="name" class="contact-form-text">
+                <label for="name">Full Name</label>
+                <span class="error-msg add-info-msg">Please enter your name</span>
+            </div>
+            <div class="contact-form-input-wrapper">
+                <input type="text" name="email" id="email" class="contact-form-text">
+                <label for="email">Email</label>
+                <span class="error-msg add-info-msg">Please provide an email address</span>
+                <span class="error-msg invalid-email-msg">Please enter a valid email address</span>
+            </div>
+            <div class="contact-form-input-wrapper">
+                <input type="text" name="subject" id="subject" class="contact-form-text">
+                <label for="subject">Subject</label>
+                <span class="error-msg add-info-msg">Please add a subject</span>
+            </div>
+            <div id="contact-form-textarea-wrapper">
+                <textarea name="message" id="message" class="contact-form-text"></textarea>
+                <label for="message" id="contact-form-textarea-lbl">How Can I help you?</label>
+                <span class="error-msg add-info-msg">Please add a message</span>
+            </div>
+            <input type="submit" value="Send" id="contact-form-submit" class="fancy-btn">
+        </form>
+    </div>
+
+    <div id="grey-out-page"></div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
