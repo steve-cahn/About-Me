@@ -58,3 +58,11 @@ a {
 #grey-bg.show {
 	display: block;
 }
+
+.material-icons {
+	user-select: none;
+
+	&.md-40 {
+		font-size: 40px;
+	}
+}

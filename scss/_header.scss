@@ -1,8 +1,9 @@
+@import '_variables.scss';
+
 header {
 	height: 630px;
 	overflow: hidden;
 	position: relative;
-	border-bottom: 1px solid #43928b;
 }
 #header-bg {
 	position: absolute;
@@ -13,23 +14,18 @@ header {
 }
 #header-left {
 	position: absolute;
-	background-color: #d2e8e6;
+	background-color: $primaryColor;
 	height: 100%;
 	width: 100%;
+	transform: skewY(-5deg);
+	transform-origin: left;
 }
 #header-right {
-	background-color: #dbdaec;
 	height: 100%;
 	width: 120%;
 	position: absolute;
 	right: -81%;
 	transform: skew(-30deg);
-}
-#hc-bg-highlighter {
-	background-color: rgba(255, 255, 255, 0.08);
-	width: 100%;
-	position: absolute;
-	height: 100%;
 }
 
 header nav {
@@ -42,7 +38,7 @@ header nav {
 header nav ul {
 	display: flex;
 	font-size: 1.5rem;
-	color: rgba(0, 107, 97, 0.5);
+	color: $secondaryColor;
 }
 header nav li button {
 	padding: 1rem 2.5rem;
@@ -52,7 +48,7 @@ header nav li button::after {
 	display: block;
 	height: 2px;
 	margin-top: 3px;
-	background-color: #006b61;
+	background-color: $secondaryColor;
 	transform: scaleX(0);
 	transition: transform 0.2s ease-in;
 }
@@ -73,11 +69,12 @@ header nav li button:hover::after {
 	width: 80%;
 }
 #hc-left-content {
-	color: #006b61;
+	color: $secondaryColor;
 	letter-spacing: 0.2rem;
 	height: 190px;
-	border-top: 1px solid;
-	border-left: 1px solid;
+	border: 2px solid;
+	border-right: none;
+	border-bottom: none;
 	padding: 2rem;
 	width: 38rem;
 }
@@ -98,7 +95,7 @@ header nav li button:hover::after {
 	align-items: center;
 }
 .header-circles {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.05);
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
@@ -107,25 +104,24 @@ header nav li button:hover::after {
 	align-items: center;
 }
 .header-inner-circles {
-	background-color: rgba(255, 255, 255, 0.22);
+	background-color: rgba(255, 255, 255, 0.12);
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
 	position: relative;
 }
 .header-squares {
-	width: 21rem;
-	height: 21rem;
-	background-color: rgba(255, 255, 255, 0.1);
+	width: 20rem;
+	height: 20rem;
+	background-color: rgba(255, 255, 255, 0.05);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transform: rotate(30deg);
 }
 .header-inner-square {
 	width: 9rem;
 	height: 9rem;
-	background-color: rgba(255, 255, 255, 0.22);
+	background-color: rgba(255, 255, 255, 0.12);
 }
 
 #circle-top-left {
@@ -142,18 +138,14 @@ header nav li button:hover::after {
 	position: absolute;
 	bottom: -8rem;
 	left: 10%;
+	transform: rotate(30deg);
 }
 
-.header-trapezoid {
+#circle-middle-right {
 	position: absolute;
-}
-#header-trapezoid-bottom {
-	left: 40%;
 	bottom: 0;
-}
-#header-trapezoid-top {
-	transform: rotate(-13deg);
-	left: 2rem;
+	right: 0;
+	transform: scale(0.8);
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1500px) {

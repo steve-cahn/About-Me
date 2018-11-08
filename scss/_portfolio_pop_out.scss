@@ -1,31 +1,16 @@
-@import '_portfolio';
-
-$animationTime: 250ms;
-$tranlateAmount: 35%;
+@import '_variables.scss';
 
 #portfolio-pop-out-container {
 	display: flex;
 	align-items: flex-start;
 	position: absolute;
 	z-index: 10;
+	border: 5px solid $primaryColor;
 	opacity: 0;
-	transition: border 50ms cubic-bezier(0.47, 0, 0.75, 0.72) $animationTime;
+	transition: opacity 250ms cubic-bezier(0.47, 0, 0.75, 0.72);
 
 	&.open {
 		opacity: 1;
-		border: 5px solid $themeColor;
-
-		img,
-		#p-pop-out-detail-container {
-			transform: translateY(0);
-			opacity: 1;
-		}
-	}
-
-	> * {
-		opacity: 0;
-		transition: transform $animationTime cubic-bezier(0.47, 0, 0.75, 0.72),
-			opacity $animationTime cubic-bezier(0.47, 0, 0.75, 0.72);
 	}
 
 	img {
@@ -80,17 +65,17 @@ $tranlateAmount: 35%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			border: darken($themeColor, 20%) 1px solid;
+			border: darken($primaryColor, 20%) 1px solid;
 			height: 65px;
 			border-radius: 2px;
 			font-size: 1.2rem;
 			letter-spacing: 0.1rem;
 			font-weight: 600;
 			background-color: white;
-			color: darken($themeColor, 15%);
+			color: darken($primaryColor, 15%);
 			&:hover {
-				color: lighten($themeColor, 40%);
-				background-color: darken($themeColor, 10%);
+				color: lighten($primaryColor, 40%);
+				background-color: darken($primaryColor, 10%);
 			}
 		}
 	}
@@ -138,14 +123,6 @@ $tranlateAmount: 35%;
 	#portfolio-pop-out-container {
 		flex-direction: row;
 		width: 70%;
-
-		img {
-			transform: translateY($tranlateAmount);
-		}
-
-		#p-pop-out-detail-container {
-			transform: translateY(-$tranlateAmount);
-		}
 
 		img {
 			width: 70%;

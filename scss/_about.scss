@@ -1,17 +1,32 @@
-#about-bg {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
+#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-top: 9rem;
+	padding-bottom: 4rem;
+	z-index: 1;
 }
+
+#about-bg {
+	/*	position: absolute;
+	top: -80px;
+	right: -130px;
+	bottom: -80px;
+	left: -120px;
+	background-color: white;
+	transform: rotate(-5deg);
+	*/
+}
+
 #about-left {
 	height: 100%;
 	width: 100%;
 	background-color: #d0ead1;
 	position: absolute;
 }
+
 #about-right {
 	background-color: #e0efcb;
 	height: 100%;
@@ -20,77 +35,82 @@
 	right: -60%;
 	transform: skewX(-30deg);
 }
+
 #about .section-wrapper {
 	width: 40%;
 }
+
 #about-top-lines {
 	height: 100%;
 	position: absolute;
 	display: flex;
 	transform: translateX(-2rem);
 }
+
 .about-line {
 	width: 3rem;
 	margin-right: 3.3rem;
 	background-color: rgba(255, 255, 255, 0.15);
 }
+
 .about-line:nth-child(5n + 5) {
 	height: 8.5rem;
 }
+
 .about-line:nth-child(5n + 1) {
 	height: 10rem;
 }
+
 .about-line:nth-child(5n + 2) {
 	height: 15rem;
 }
+
 .about-line:nth-child(5n + 3) {
 	height: 18rem;
 }
+
 .about-line:nth-child(5n + 4) {
 	height: 13rem;
 }
 
-#about {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
-	padding-top: 13rem;
-	padding-bottom: 8rem;
-}
 #about-content {
 	display: flex;
 	width: 70%;
 	position: relative;
 	top: -3rem;
 }
+
 #about-content-left {
 	font-size: 2rem;
 	border: 1px solid;
 	padding: 2rem;
 }
+
 #about-content-left span {
 	display: block;
 	line-height: 2.9rem;
 }
+
 #about-content-left span:first-child {
 	font-weight: 600;
 }
+
 #about-content-left span:last-child {
 	font-weight: 100;
 	letter-spacing: 0.08rem;
 }
+
 #about-content-right {
 	width: 70%;
 	padding: 2rem;
 	line-height: 2rem;
 	letter-spacing: 0.1rem;
 }
+
 #about-content-right p {
 	line-height: 2rem;
 }
+
 #about-heading {
 	color: rgba(0, 0, 0, 0.7);
 	font-size: 1.3rem;
@@ -101,16 +121,19 @@
 	#about {
 		justify-content: initial;
 		padding-top: 0;
+		margin-top: 4rem;
 	}
+
 	#about-content {
 		flex-direction: column;
 		top: 0;
 	}
+
 	#about-content-left {
 		width: 19rem;
 		margin-left: 2rem;
-		border-top: none;
 	}
+
 	#about-content-right {
 		width: initial;
 	}
@@ -118,8 +141,10 @@
 
 @media only screen and (min-width: 0px) and (max-width: 700px) {
 	#about-content-left {
+		width: initial;
 		margin-left: 0;
 	}
+
 	#about-content-right {
 		padding: 0;
 		padding-top: 2rem;

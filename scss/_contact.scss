@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 #contact {
 	display: flex;
 	justify-content: center;
@@ -59,7 +61,7 @@
 	text-decoration: underline;
 }
 #contact-lower-title {
-	background-color: #ffecd1;
+	background-color: $primaryLight;
 	border: 1px solid #774d0e;
 	color: rgba(119, 77, 14, 0.7);
 	font-size: 1.3rem;
@@ -72,11 +74,6 @@
 	border-bottom-left-radius: 2px;
 	letter-spacing: 0.15rem;
 	text-transform: uppercase;
-}
-#contact-context span {
-	background-color: rgba(0, 0, 0, 0.15);
-	padding: 4px;
-	border-radius: 1px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 575px) {

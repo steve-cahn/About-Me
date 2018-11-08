@@ -10,7 +10,7 @@
 	var sectionAbout = document.getElementById('about');
 	var sectionSkills = document.getElementById('skills');
 	var portfolioView = document.getElementById('portfolio');
-	var contactView = document.getElementById('contact');
+	var contactView = document.getElementById('footer-wrapper');
 
 	(function init() {
 		// Add scrolling event for menu items
@@ -25,7 +25,7 @@
 		for (var i = 0; i < elem.length; i++) {
 			var currentElem = elem[i];
 
-			currentElem.addEventListener('click', function(e) {
+			currentElem.addEventListener('click', function (e) {
 				sideMenuHandler.close();
 
 				targetScroll.scrollIntoView({
