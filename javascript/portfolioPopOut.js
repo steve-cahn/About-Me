@@ -35,7 +35,10 @@ function popOutHandler() {
 		html += '<div id="p-pop-out-detail-container">';
 		html += '<h3>' + title + '</h3>';
 		html += '<div id="p-pop-out-desc">' + desc + '</div>';
-		html += '<a href="' + link + '" id="p-pop-out-visit">Visit</a>';
+		html +=
+			'<a target="_blank" href="' +
+			link +
+			'" id="p-pop-out-visit">Visit</a>';
 		html += '</div>';
 
 		popOutContainer.insertAdjacentHTML('afterbegin', html);

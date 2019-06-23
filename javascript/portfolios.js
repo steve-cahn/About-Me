@@ -7,6 +7,12 @@ function portfoliosData() {
 
 	var portfolios = [
 		{
+			title: 'To Do List',
+			link: 'http://todo.stevecahn.net/',
+			imgSrc: 'https://i.postimg.cc/bwRwn257/to-do-list.gif',
+			desc: `This is a full stack website created using MongoDB, Express.js, React.js, Node.js. Or the MERN stack. It's a pretty complex to-do web app since it has a user accounts system so that users can register/log in to their accounts to view their specific to-do list. Had a lot of fun creating this!`
+		},
+		{
 			title: 'phoneRX',
 			link: 'http://www.phonerx.stevecahn.net/',
 			imgSrc: 'https://i.postimg.cc/1zf5VmG1/phoneRX.gif',

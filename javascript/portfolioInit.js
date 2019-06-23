@@ -42,7 +42,7 @@
 			'<button class="portfolio-expand" onClick="popOutHandler().open(' +
 			index +
 			')">Read More</button>';
-		html += '<a href="' + link + '">Visit</a>';
+		html += '<a target="_blank" href="' + link + '">Visit</a>';
 		html += '</div>';
 		html += '</div>';
 
