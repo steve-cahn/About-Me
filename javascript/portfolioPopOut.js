@@ -29,16 +29,22 @@ function popOutHandler() {
 	}
 
 	function populateHTML(title, link, imgSrc, desc) {
+		var descClassName = 'p-pop-out-desc';
+		if (!link) descClassName += ' full';
 		var html = '';
 
+		console.log(descClassName);
+
 		html += '<img src="' + imgSrc + '" alt="' + title + '">';
-		html += '<div id="p-pop-out-detail-container">';
+		html += '<div class="p-pop-out-detail-container">';
 		html += '<h3>' + title + '</h3>';
-		html += '<div id="p-pop-out-desc">' + desc + '</div>';
-		html +=
-			'<a target="_blank" href="' +
-			link +
-			'" id="p-pop-out-visit">Visit</a>';
+		html += '<div class="' + descClassName + '">' + desc + '</div>';
+		if (link) {
+			html +=
+				'<a target="_blank" href="' +
+				link +
+				'" class="p-pop-out-visit">Visit</a>';
+		}
 		html += '</div>';
 
 		popOutContainer.insertAdjacentHTML('afterbegin', html);
