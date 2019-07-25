@@ -1085,7 +1085,7 @@ header nav li button:hover::after {
   background-color: white;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container {
+#portfolio-pop-out-container .p-pop-out-detail-container {
   padding: 2rem;
   -ms-flex-item-align: normal;
       align-self: normal;
@@ -1104,14 +1104,14 @@ header nav li button:hover::after {
   background-color: white;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container h3 {
+#portfolio-pop-out-container .p-pop-out-detail-container h3 {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container #p-pop-out-desc {
+#portfolio-pop-out-container .p-pop-out-detail-container .p-pop-out-desc {
   letter-spacing: 0.1rem;
   line-height: 1.7rem;
   top: 80px;
@@ -1122,20 +1122,24 @@ header nav li button:hover::after {
   overflow: auto;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container #p-pop-out-desc p:not(:first-child), #portfolio-pop-out-container #p-pop-out-detail-container #p-pop-out-desc p:not(:last-child) {
+#portfolio-pop-out-container .p-pop-out-detail-container .p-pop-out-desc.full {
+	bottom: 0;
+}
+
+#portfolio-pop-out-container .p-pop-out-detail-container .p-pop-out-desc p:not(:first-child), #portfolio-pop-out-container .p-pop-out-detail-container .p-pop-out-desc p:not(:last-child) {
   margin: 20px 0;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container #p-pop-out-desc ul {
+#portfolio-pop-out-container .p-pop-out-detail-container .p-pop-out-desc ul {
   padding: 0 40px;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container #p-pop-out-desc li {
+#portfolio-pop-out-container .p-pop-out-detail-container .p-pop-out-desc li {
   padding: 10px 0;
   list-style-type: disc;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container a {
+#portfolio-pop-out-container .p-pop-out-detail-container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1155,7 +1159,7 @@ header nav li button:hover::after {
   color: #7d66ff;
 }
 
-#portfolio-pop-out-container #p-pop-out-detail-container a:hover {
+#portfolio-pop-out-container .p-pop-out-detail-container a:hover {
   color: white;
   background-color: #9380ff;
 }
@@ -1171,7 +1175,7 @@ header nav li button:hover::after {
   #portfolio-pop-out-container img {
     width: 100%;
   }
-  #portfolio-pop-out-container #p-pop-out-desc {
+  #portfolio-pop-out-container .p-pop-out-desc {
     position: initial;
     margin: 2rem 0;
     max-height: 200px;
@@ -1189,7 +1193,7 @@ header nav li button:hover::after {
   #portfolio-pop-out-container img {
     width: 100%;
   }
-  #portfolio-pop-out-container #p-pop-out-desc {
+  #portfolio-pop-out-container .p-pop-out-desc {
     position: initial;
     margin: 2rem 0;
     max-height: 200px;
@@ -1213,7 +1217,7 @@ header nav li button:hover::after {
   #portfolio-pop-out-container img {
     width: 70%;
   }
-  #portfolio-pop-out-container #p-pop-out-desc {
+  #portfolio-pop-out-container .p-pop-out-desc {
     position: absolute;
     margin: 0;
     max-height: initial;
