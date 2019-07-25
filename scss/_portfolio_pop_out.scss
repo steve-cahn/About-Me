@@ -17,7 +17,7 @@
 		background-color: white;
 	}
 
-	#p-pop-out-detail-container {
+	.p-pop-out-detail-container {
 		padding: 2rem;
 		align-self: normal;
 		width: 100%;
@@ -34,7 +34,7 @@
 			letter-spacing: 0.2rem;
 		}
 
-		#p-pop-out-desc {
+		.p-pop-out-desc {
 			letter-spacing: 0.1rem;
 			line-height: 1.7rem;
 			top: 80px;
@@ -43,6 +43,10 @@
 			left: 30px;
 			text-align: justify;
 			overflow: auto;
+			
+			&.full {
+				bottom: 0;
+			}
 
 			p {
 				&:not(:first-child),
@@ -89,7 +93,7 @@
 		img {
 			width: 100%;
 		}
-		#p-pop-out-desc {
+		.p-pop-out-desc {
 			position: initial;
 			margin: 2rem 0;
 			max-height: 200px;
@@ -105,7 +109,7 @@
 		img {
 			width: 100%;
 		}
-		#p-pop-out-desc {
+		.p-pop-out-desc {
 			position: initial;
 			margin: 2rem 0;
 			max-height: 200px;
@@ -127,7 +131,7 @@
 		img {
 			width: 70%;
 		}
-		#p-pop-out-desc {
+		.p-pop-out-desc {
 			position: absolute;
 			margin: 0;
 			max-height: initial;
