@@ -7,6 +7,13 @@ function portfoliosData() {
 
 	var portfolios = [
 		{
+			title: 'Dashboard',
+			link: 'https://dashboard.stevecahn.net',
+			imgSrc:
+				'https://media.giphy.com/media/llUG4UoYKrwRUv3OMU/giphy.gif',
+			desc: `I created a dark version of a dashboard for the fun of it. It's created using the technologies of react.js, react-router, node.js, express.js. and mysql.`
+		},
+		{
 			title: 'Gaming Video Channel',
 			link: '',
 			imgSrc:
